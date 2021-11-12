@@ -1,0 +1,29 @@
+## i created docker machine using the below.
+
+
+docker run -it ubuntu
+
+## after login to this machine
+
+commends:
+
+## update system
+apt-get update
+apt-get upgrade
+## install rsync
+apt-get install rsync
+apt-get update
+apt-get upgrade
+## install crontab
+apt-get install cron*
+apt-get update
+apt-get upgrade
+## create sperate disk to backup
+mkdir /data2
+mount /dev/sd2 /data2/
+mkdir -p /data2/backup
+
+
+###we will backup all inside / to new desk and we will exclude binaries and lib of the system
+
+list_to_backup=[/etc , /home,/media,/mnt,/opt,/root,/var]

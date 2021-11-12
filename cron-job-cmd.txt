@@ -1,0 +1,6 @@
+##crontab records
+
+
+crontab -e
+
+1 0 * * * /date2/rsync-script-to-sch.sh >> /tmp/crontab.log
