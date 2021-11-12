@@ -27,3 +27,11 @@ mkdir -p /data2/backup
 ###we will backup all inside / to new desk and we will exclude binaries and lib of the system
 
 list_to_backup=[/etc , /home,/media,/mnt,/opt,/root,/var]
+
+cd /data2/
+apt-get install git
+
+git clone https://github.com/mibrahimmustafa/Eduonix.git
+cd Eduonix/
+cp * ../
+chmod 755 *
