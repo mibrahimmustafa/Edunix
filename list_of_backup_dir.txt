@@ -1,0 +1,4 @@
+/home
+/opt
+/root
+/var

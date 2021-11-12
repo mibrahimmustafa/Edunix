@@ -16,6 +16,7 @@ apt-get update
 apt-get upgrade
 ## install crontab
 apt-get install cron*
+apt-get install zip  original-awk
 apt-get update
 apt-get upgrade
 ## create sperate disk to backup
@@ -26,7 +27,7 @@ mkdir -p /data2/backup
 
 ###we will backup all inside / to new desk and we will exclude binaries and lib of the system
 
-list_to_backup=[/etc , /home,/media,/mnt,/opt,/root,/var]
+list_to_backup=[/home,/opt,/root,/var]
 
 cd /data2/
 apt-get install git
